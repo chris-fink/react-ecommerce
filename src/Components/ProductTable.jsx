@@ -41,7 +41,7 @@ export default function ProductTable({ cart, updateCart }) {
       setProducts(body);
     };
     fetchProducts();
-  });
+  }, []); //Empty dependency array to stop re-render
 
   return (
     <div className="bg-white">
